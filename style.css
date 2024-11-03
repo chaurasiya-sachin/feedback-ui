@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e0ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #006400;
+}
+
+.main {
+    width: 500px;
+}
+
+.f1 {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #00000044;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9FFFF;
+}
+
+.icon {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    cursor: pointer;
+}
+
+.icon-box {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.icon-box small {
+    font-size: 16px;
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-box:hover,
+.icon-box.active {
+    background-color: #8FBC8F;
+    color: #fff;
+}
+
+button {
+    width: 150px;
+    padding: 15px;
+    background-color: #008B8B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4682B4;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.f2 {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #00000044;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9FFFF;
+}
+
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+   
+    .main {
+        width: 90%;
+        padding: 10px;
+    }
+
+    
+    .f1, .f2 {
+        padding: 15px;
+        box-shadow: 0 3px 15px #00000033;
+    }
+
+  
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+ 
+    .icon {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .icon-box {
+        width: 100%;
+        height: 70px;
+        gap: 5px;
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    .icon-box small {
+        font-size: 14px;
+    }
+
+    
+    .icon-box img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    #feedback {
+        font-size: 1.2em;
+        margin: 15px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
